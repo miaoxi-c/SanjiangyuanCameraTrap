@@ -1,8 +1,9 @@
 # For creating independent detections spread sheet from excel/csv files for "all-video sites"
-setwd("C:/Users/wo/Desktop")
+setwd("/Volumes/雪豹-那曲/数据处理流程尝试/Angsai-2022.1-3/Angsai_2022.4.2回收/原始数据-已打标签/AS59-1(全视频，cxe之后做)")
 
 # read data
-test <- read.csv("601702.csv")
+#library(readxl)
+test <- read.csv("/Volumes/雪豹-那曲/数据处理流程尝试/Angsai-2022.1-3/Angsai_2022.4.2回收/原始数据-已打标签/AS59-1(全视频，cxe之后做)/AS59-1 species table.csv")
 
 head(test)
 test$Species <- as.factor(test$Species)
